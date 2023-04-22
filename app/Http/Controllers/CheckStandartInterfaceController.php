@@ -27,6 +27,9 @@ class CheckStandartInterfaceController extends Controller
         return response([], 200);
     }
 
+    /**
+     * @return void
+     */
     public function foreachArr()
     {
         dispatch(new ForeachArrJob($this->month));
